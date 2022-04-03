@@ -77,8 +77,5 @@ for epoch in range(EPOCH):
 
 
 # 绘制 loss
-plt.style.use("solarized-light")
 plt.plot(range(EPOCH), loss_l)
-#plt.show()
-plt.savefig("./fig-loss.jpeg")
-plt.clf()
+plt.show()
