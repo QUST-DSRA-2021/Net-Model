@@ -46,14 +46,16 @@ class MyDataset(Dataset):
 if __name__ == "__main__":
     # 使用步骤说明
     # 一、先从网上下载数据
-    # train_dataset = datasets.MNIST(root='../', train=True, transform=transforms.ToTensor(), download=True)
+    train_dataset = datasets.MNIST(root='../', train=True, transform=transforms.ToTensor(), download=True)
+    test_dataset = datasets.MNIST(root='../', train=False, transform=transforms.ToTensor(), download=True)
+
     # 二、本地读取数据（下载之后无需再进行步骤一）
     trainDataset = MyDataset('../MNIST/raw', "train-images-idx3-ubyte.gz", "train-labels-idx1-ubyte.gz",
                              transform=transforms.ToTensor())
     # 三、训练数据的装载
     train_loader = torch.utils.data.DataLoader(
         dataset=trainDataset,
-        batch_size=10,  # 一个批次可以认为是一个包，每个包中含有10张图片
+        batch_size=10,
         shuffle=False,
     )
 
