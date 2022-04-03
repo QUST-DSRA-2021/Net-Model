@@ -31,6 +31,9 @@ def mnist2lenet(x: np.ndarray) -> np.ndarray:
     res /= 255
     return res
 
+def plothist(h: keras.callbacks.History, s: str) -> None:
+    return # TODO::FIXME!!
+
 X_Train = mnist2lenet(X_Train)
 X_Test = mnist2lenet(X_Test)
 y_Train = keras.utils.to_categorical(y_Train, Constants.NUM_CLASSES)
@@ -59,4 +62,9 @@ lenet.compile(
         metrics = ["accuracy"])
 
 if __name__ == "__main__":
-    hist = lenet.fit() # TODO::FIXME!!
+    hist = lenet.fit(
+            X_Train, y_Train,
+            batch_size = Constants.BATCH_SIZE,
+            epochs = Constants.NUM_EPOCHES,
+            verbose = 1,
+            validation_data = (X_Test, y_Test))

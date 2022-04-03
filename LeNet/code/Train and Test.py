@@ -8,8 +8,8 @@ from torchvision import transforms, datasets
 
 # Data.py 文件中的 MyDataset 类存在一点小问题，但是可以正常使用。这里由于问题尚未解决使用 datasets.MNIST
 # 第一次使用时 download 设置为 True
-train_dataset = datasets.MNIST(root='../', train=True, transform=transforms.ToTensor(), download=True)
-test_dataset = datasets.MNIST(root='../', train=False, transform=transforms.ToTensor(), download=True)
+train_dataset = datasets.MNIST(root='../', train=True, transform=transforms.ToTensor(), download=False)
+test_dataset = datasets.MNIST(root='../', train=False, transform=transforms.ToTensor(), download=False)
 
 # 训练集
 train_loader = torch.utils.data.DataLoader(
