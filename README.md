@@ -15,7 +15,7 @@ Net-Model
 ---
 2022.4.2 更新 LeNet \
 2022.4.3 更新 LeNet \
-2022.4.4 更新 AlexNet \
+2022.4.4 更新 AlexNet 
 
 注意
 ---
