@@ -1,5 +1,6 @@
 AlexNet
 ---
+本项目中的 AlexNet 使用 GPU 进行训练。
 
 更新记录
 ---
