@@ -4,7 +4,10 @@
 
 ## `LeNet` 5
 
-由 *Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner* 于文献 **Gradient-Based Learning Applied to Document Recognition [^1]** 提出的用于识别手写数字的经典`convnet`.
+由 *Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner* 于文献 **Gradient-Based Learning Applied to Document Recognition** 提出的用于识别手写数字的经典`convnet`.
+
+* On IEEEXplore: [^1]
+* On Yann LeCun's Own Website: <http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf>
 
 ![](assets/LeNet-5.jpeg)
 
