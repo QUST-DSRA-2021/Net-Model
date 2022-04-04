@@ -1,15 +1,17 @@
-# `Keras`-implementations
-
-于此存放的是, 各模型使用`tf1 backended Keras`进行的实现.
-
-## `LeNet` 5
+# `LeNet-5-Keras`
 
 由 *Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner* 于文献 **Gradient-Based Learning Applied to Document Recognition** 提出的用于识别手写数字的经典`convnet`.
+
+于此存放的是, 其基于`tf1 backended Keras`的实现.
+
+## Origin
 
 * On IEEEXplore: [^1]
 * On Yann LeCun's Own Website: <http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf>
 
 ![](assets/LeNet-5.jpeg)
+
+## Implementation in `Keras`
 
 于此使用`Keras`对其进行复现:
 
@@ -32,13 +34,13 @@ lenet.compile(
         metrics = ["accuracy"])
 ```
 
-表现如下:
+## Performance
 
 | `#` | `Keras` version | `TensorFlow` version | `Python` version | Hardware | Training time (/sec) | Testing Loss | Testing Acc |
 |-----|-----------------|----------------------|------------------|----------|----------------------|--------------|-------------|
 | I | 2.1.6 | 1.11.0 | 3.6.5 | NVIDIA GeForce `MX250` | 99.07298493385315 | 0.029901272440085995 | 0.9905 |
 
-Outputs:
+## Output
 
 ```py
 D:\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
@@ -103,6 +105,8 @@ Training Time: 99.07298493385315
 Testing Loss: 0.029901272440085995
 Testing Accuracy: 0.9905
 ```
+
+## Plotted Figures
 
 ![](logs-lenet/LeNet-5-acc.1649035239.3396833.jpeg)![](logs-lenet/LeNet-5-loss.1649035239.607451.jpeg)
 
