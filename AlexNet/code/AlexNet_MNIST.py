@@ -35,8 +35,7 @@ class AlexNet(nn.Module):
         self.fc2 = nn.Sequential(
             nn.Linear(1024, 512),
             nn.ReLU(),
-            nn.Dropout(p=0.5),
-            nn.Dropout(p=0.5),
+            nn.Dropout(p=0.5)
         )
         self.fc3 = nn.Linear(512, 10)
 
