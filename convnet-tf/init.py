@@ -3,8 +3,6 @@
 
 from __future__ import absolute_import, division, print_function
 
-__author__ = "sandyzikun"
-
 import argparse, sys
 from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf
