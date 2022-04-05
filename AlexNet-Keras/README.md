@@ -2,7 +2,13 @@
 
 由 *Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton* 于文献 **ImageNet Classification with Deep Convolutional Neural Networks [^1]** 提出的`convnet`.
 
+![](assets/AlexNet.jpeg)
+
 于此存放的是, 其基于`tf1 backended Keras`的实现.
+
+## Structure
+
+![](assets/AlexNet-pydot.jpeg)
 
 ## Implementation in `Keras`
 

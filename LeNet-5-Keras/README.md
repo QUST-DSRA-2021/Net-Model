@@ -2,6 +2,8 @@
 
 由 *Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner* 于文献 **Gradient-Based Learning Applied to Document Recognition** 提出的用于识别手写数字的经典`convnet`.
 
+![](assets/LeNet-5.jpeg)
+
 于此存放的是, 其基于`tf1 backended Keras`的实现.
 
 ## Origin
@@ -9,7 +11,9 @@
 * On IEEEXplore: [^1]
 * On Yann LeCun's Own Website: <http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf>
 
-![](assets/LeNet-5.jpeg)
+## Structure
+
+![](assets/LeNet-5-pydot.jpeg)
 
 ## Implementation in `Keras`
 
