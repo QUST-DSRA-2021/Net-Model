@@ -17,10 +17,10 @@ plt.style.use("solarized-light")
 class Constants(object):
     BATCH_SIZE = 128
     NUM_CLASSES = 10
-    NUM_EPOCHES = 12
+    NUM_EPOCHES = 6
     IMG_ROWS = 28 * 2
     IMG_COLS = 28 * 2
-    DIR_LOGS = "./logs-vgg16/"
+    DIR_LOGS = "./logs-vgg11/"
 
 (X_Train, y_Train), (X_Test, y_Test) = keras.datasets.mnist.load_data()
 
@@ -31,10 +31,10 @@ else:
 
 def mnist2vgg16(x: np.ndarray) -> np.ndarray:
     res = np.zeros((x.shape[0], Constants.IMG_ROWS, Constants.IMG_COLS))
-    res[ : , : : 2 , : : 2 ] += x
-    res[ : , 1 : : 2 , : : 2 ] += x
-    res[ : , : : 2 , 1 : : 2 ] += x
-    res[ : , 1 : : 2 , 1 : : 2 ] += x
+    res[ : , 0 :: 2 , 0 :: 2 ] += x
+    res[ : , 1 :: 2 , 0 :: 2 ] += x
+    res[ : , 0 :: 2 , 1 :: 2 ] += x
+    res[ : , 1 :: 2 , 1 :: 2 ] += x
     res = res.astype(np.float32)
     res = res.reshape((x.shape[0],) + Constants.INPUT_SHAPE)
     res /= 255
