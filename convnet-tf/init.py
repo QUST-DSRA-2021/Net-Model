@@ -1,6 +1,8 @@
 #!/usr/bin/env Python
 # -*- coding: utf-8 -*-
 
+# TensorFlow 1.11.0
+
 from __future__ import absolute_import, division, print_function
 
 import argparse, sys

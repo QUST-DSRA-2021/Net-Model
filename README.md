@@ -11,6 +11,17 @@ Net-Model
 - 复现代码
 - 扩展资料
 
+### Implementations
+
+| Models | Implementations | Uploader |
+|--------|-----------------|----------|
+| `LeNet` | [LeNet in `Torch`](LeNet) | [`@Yu-xm`](https://github.com/Yu-xm/) |
+|         | [LeNet5 in `Keras`](LeNet-5-Keras) | [`@sandyzikun`](https://sandyzikun.github.io/) |
+| `AlexNet` | [AlexNet in `Torch`](AlexNet) | [`@Yu-xm`](https://github.com/Yu-xm/) |
+|           | [AlexNet in `Keras`](AlexNet-Keras) | [`@sandyzikun`](https://sandyzikun.github.io/) |
+| `VGG` | [VGG in `Torch`](VGG) | [`@Yu-xm`](https://github.com/Yu-xm/) |
+|       | [VGG11 in `Keras`](VGG11-Keras) | [`@sandyzikun`](https://sandyzikun.github.io/) |
+
 更新记录
 ---
 2022.4.2 更新 LeNet \
